@@ -104,7 +104,7 @@ function CommentSpaceAllocator(w,h){
 		return cmt.stime + cmt.dur;
 	};
 	this.getMiddle = function(cmt){
-		return cmt.stime + this.width/2/(cmt.width/2+this.width)*cmt.dur;
+		return cmt.stime + this.width/(cmt.width+this.width/1.2)*cmt.dur;
 	};
 }
 function ScrollCommentSpaceAllocator(w,h){
